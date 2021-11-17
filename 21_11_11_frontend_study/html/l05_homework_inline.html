@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework inline elements</title>
+
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Nanum+Myeongjo&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>inline 속성의 elements를 정리해보자</h1>
+    <!-- <P>block_level elements로는 address,article,aside,blockquote,canvas,dd,div,
+        dl,dt,fieldest,figcaption,figure,footer,form,h1~h6,header,hr,li,main,nav,noscript,ol,
+        p,pre,section,table,tfoot,ul,video 등이 있다.
+    </P> -->
+    <p>inline 속성으로는 a , abbr , acronym , b , bdo , big , br , buttom , cite,code,dfn,em,i,img
+        input,kdb,label,map,object,output,q,samp,script,select,small,span,strong,sub,sup,textarea,time,tt,vat등이 있다</p>
+    <p>인라인 요소는 새 줄에서 시작하지 않는다. 인라인 요소는 필요한 만큼만 너비를 차지한다.</p>
+    <h3>span inline에서 대표적으로 사용되는 빈깡통</h3>
+        <p>span은 <span style="color: cadetblue; font-weight: bolder;">필요한곳에서</span>언제든지 사용이 가능하며
+        <span style="color: red;">red</span>등으로 사용가능하다.</p>
+            <ul>
+                <li>span 태그는 텍스트 또는 문서의 일부의 부분을 표시하는 데 사용 인라인 element이다</li>
+                <li>span 태그는 쉽게 css에 의해 스타일 또는 클래스 or id 속성을 사용하여 자바스크립트로 조작된다.</li>
+                <li>block레벨에 div가 있다면 inline레벨에선 span이 존재한다.</li>
+            </ul>
+
+    <h3>a 태그는 인라인요소로 다른링크를 사용하는 하이퍼 링크를 정의한다.</h3>
+    <p><a href="https://www.w3schools.com">w3schools</a></p>
+            <ul>
+                <li>a 요소에서 가장 중요한 속성은 href(Hypertext REFerance)링크의 목적지를 나타내는 속성이다.</li>
+                <li>a 요소는 두가지 주소를 가진다.</li>`
+                    <ul>
+                        <li>href="/url" : 상대 url로 해당 서버 내부의 다른 페이지로 이동(navigation 역활)</li>
+                        <li>href="https://url" : 절대 url로 다른 서버로 이동(a태그가 참조하는 절대 url로 검색 우선 순위를 늘릴 수 있다.)</li>
+                    </ul>
+            </ul>
+        
+    <h3>br 태그는 인라인구조에서 enter기능을 한다.</h3>
+    <br>
+    <h3>strong은 인라인레벨에서 글자를 강조(굵게표시)해주는 기능이 있다.</h3>
+    <p>강한 중요성 텍스트를 정의하는데 사용되며, 내부의 내용은 일반적으로 <strong>굵게표시</strong>됩니다.</p>
+
+    <h3>img 태그는 html 페이지에 포함 된 이미지에 사용된다.</h3>
+    <p>이미지는 기술적으로 웹 페이지에 직접 삽입되지 않는다. 이미지는 웹페이지에 링크되어 img태그를 참조하여 이미지에 대한 공간을 만든다.</p>
+    <p><img src="/html/123.png" alt="corgi" width="300" height="300">img-ex</p>
+            <ul>
+                <li>src : 이미지의 경로를 지정합니다.</li>
+                <li>alt : 어떤 이유로 이미지를 표시할 수 없는 경우 이미지의 대체 텍스트를 지정합니다.</li>
+            </ul>
+    <h3>button은 클릭 버튼을 정의합니다.</h3>
+    <p>내부 버튼요소는(i, b, strong, br, img 등 같은 태그를 넣을 수 있습니다.) 단, input 요소로 만든 버튼에는 불가</p>
+    <p><button type="button" onclick="alert('hello world!')">Click me!</button></p>
+    <h3>em은 강조와 텍스트를 정의한는데 사용된다. 일반적으로 기울임꼴로 표시된다</h3>
+    <p>기울임 <em>기울임</em> 기울임 <em>기울임</em></p>
+    
+    <h3>pre</h3>
+<pre>요소의 텍스트는 고정 너비 글꼴로 표시되며 텍스트는 공백과 줄 바꿈을 모두 유지한다.
+        hmtl 소스 코드에 작성된 그대로를 표시하며. 시와 같은 인용구등에 쓰임이 좋다.
+
+<strong>demian</strong>
+새는 알에서 나오기 위해 투쟁한다. 
+알은 새의 세계이다. 
+누구든지 태어나려고 하는 자는 하나의 세계를 파괴하여야 한다.
+새는 신을 향해 날아간다. 
+그 신의 이름은 아브락사스이다
+</pre>
+
+    <h3>select 요소는 드롭 다운 목록을 작성하는 데 사용된다.</h3>
+    <p>select 요소는 사용자 입력을 수집하기 위해 양식에서 가장 자주 사용된다.</p>
+        <ul>
+            <li>name 속성은 양식이 제출된 후 양식 데이터를 참조하는 데 필요.(name속성을 생략하면 드롭다운 목록의 데이터가 제출되지 않음) </li>
+            <li>id 속성은 드롭다운 목록을 레이블과 연결하는 데 필요합니다.</li>
+            <li>option은 select요소 내부의 사용가능한 옵션을 정의합니다.</li>
+        </ul>
+    <form action="/action_page.php">
+        <label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="bmw">bmw</option>
+                <option value="benz">benz</option>
+                <option value="mini">mini</option>
+                <option value="audi">audi</option>
+            </select>
+    </form>
+    <br>
+    <input type="submit" value="submit">
+
+    <h3>block속성은 하나의 라인을 반드시 차지하게 된다.(전체적으로)</h3>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <h3>inline속성은</h3>
+ <a href="">1</a>
+ <a href="">2</a>
+ <a href="">3</a>
+ <a href="">4</a>
+ <a href="">5</a>
+ <button type="button" onclick="">button</button>
+ <button type="button" onclick="">button</button>
+ <button type="button" onclick="">button</button>
+<span>1</span><span>2</span><span>3</span>
+</body>
+</html>

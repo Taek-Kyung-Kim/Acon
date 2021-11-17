@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japascript constant</title>
+</head>
+<body>
+    <h1>자바스크립트의 상수(const)</h1>
+    <p>상수 : 변하지 않는 수, 한번 참조하면 다른 것을 참조할 수 없다.</p>
+    <h2>상수(const)를 사용할 때 주의해야 할 점</h2>
+    <ul>
+        <li>const PI; PI=3.14 (x)(Missing initializer in const declaration 오류)</li>
+        <li>const PI =3.14 (o) : 상수는 선언과 동시에 data를 참조해야한다.</li>
+        <li>절대 변경되지 않을 거라는 확신이 있는 data를 참조한다.</li>
+        <li>const car_arr=["a","b","c"]; car_array[2]="qm3"; : 만약 참조하는 것이 배열이면
+            배열을 바꾸는 것은 불가능하나 값을 바꾸는 것은 가능하다. (배열을 선언할떄는 const많이사용)
+        </li>
+        <li>상수의 이름은 대문자로만 작성한다.(개발자간의 약속) ex) colorBlue (x) => COLOR_BLUE(O) </li>
+    </ul>
+<script>
+const PI;
+PI=3.14159265359;    // 어떠한 값이 바뀌지 않을때 상수 사용
+console.log(PI*10*10);
+</script>
+</body>
+</html>
